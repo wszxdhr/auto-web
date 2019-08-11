@@ -1,0 +1,47 @@
+{
+  "name": "auto-web",
+  "version": "0.0.1",
+  "description": "A module powered by puppeteer.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/demo/demo1.js --watch src --exec \"npm run lint && babel-node --presets env --plugins babel-plugin-syntax-object-rest-spread\"",
+    "lint": "eslint src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wszxdhr/auto-web.git"
+  },
+  "keywords": [
+    "puppeteer",
+    "chrome",
+    "frontend",
+    "test",
+    "auto",
+    "workflow"
+  ],
+  "author": "wszxdhr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wszxdhr/auto-web/issues"
+  },
+  "homepage": "https://github.com/wszxdhr/auto-web#readme",
+  "dependencies": {
+    "puppeteer": "^1.19.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.2",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.19.1"
+  }
+}
